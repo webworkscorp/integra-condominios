@@ -45,7 +45,7 @@ export default function Hero() {
             transition={{ type: "spring", stiffness: 150, damping: 20, delay: 0.4 }}
             className="mt-16 max-w-md ml-2"
           >
-            <p className="text-base font-light leading-relaxed opacity-80">
+            <p className="text-base font-light leading-relaxed text-black">
               Trascendemos la administración tradicional. Diseñamos experiencias residenciales impecables mediante rigor financiero, tecnología y un servicio de guante blanco.
             </p>
             <div className="mt-10 flex items-center gap-6">
@@ -54,7 +54,7 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase">Descubrir más</span>
+              <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Descubrir más</span>
             </div>
           </motion.div>
         </div>

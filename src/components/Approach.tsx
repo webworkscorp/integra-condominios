@@ -61,7 +61,7 @@ export default function Approach() {
               className="flex items-center gap-4 mb-8"
             >
               <span className="w-12 h-[1px] bg-[var(--color-ink)]"></span>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase">Nuestra Propuesta</span>
+              <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Propuesta</span>
             </motion.div>
             
             <motion.h2 
@@ -79,7 +79,7 @@ export default function Approach() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.7 }}
-              className="text-xl font-light opacity-70 mb-12 leading-relaxed"
+              className="text-xl font-light text-black mb-12 leading-relaxed"
             >
               Sabemos que administrar una comunidad no es solo cobrar cuotas; es garantizar la plusvalía de tu patrimonio y la armonía entre vecinos. Llegamos para transformar la administración tradicional.
             </motion.p>
@@ -104,7 +104,7 @@ export default function Approach() {
                   </div>
                   <div>
                     <h4 className="text-xl font-medium mb-2 tracking-tight">{pillar.title}</h4>
-                    <p className="text-sm font-light opacity-60 leading-relaxed max-w-md group-hover:opacity-100 transition-opacity duration-500">
+                    <p className="text-sm font-light text-black leading-relaxed max-w-md transition-opacity duration-500">
                       {pillar.desc}
                     </p>
                   </div>
@@ -120,7 +120,7 @@ export default function Approach() {
               className="mt-12 flex items-center gap-4"
             >
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <p className="text-xs font-medium tracking-[0.1em] uppercase opacity-40">
+              <p className="text-xs font-medium tracking-[0.1em] uppercase text-black">
                 📍 Estamos listos para elevar el estándar de tu residencial.
               </p>
             </motion.div>

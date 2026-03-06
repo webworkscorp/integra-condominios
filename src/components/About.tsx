@@ -15,7 +15,7 @@ export default function About() {
           >
             <div className="flex items-center gap-4 mb-8">
               <span className="w-12 h-[1px] bg-[var(--color-ink)]"></span>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase">Nuestra Esencia</span>
+              <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Esencia</span>
             </div>
             <p className="text-2xl md:text-4xl font-medium tracking-tight leading-tight mb-16">
               {`"En Integra, Un tubo roto significa una familia que no podrá usar su cocina, entendemos la necesidad humana y actuamos de forma personalizada e inmediata, La falta de un Quick Pass no es solo un problema de acceso, es una persona insatisfecha que no puede llegar cómodamente a su hogar. Solucionamos su problema de acceso para servir a la persona, trabajamos con un sistema de tickets para mejorar la atención oportuna en un plazo máximo de 24 horas ."`.split(',').map((phrase, i) => (
@@ -62,7 +62,7 @@ export default function About() {
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="relative pl-8 border-l border-[var(--color-line)]"
             >
-              <h3 className="text-[10px] font-bold tracking-[0.3em] uppercase opacity-30 mb-16">Valores Fundamentales</h3>
+              <h3 className="text-[10px] font-bold tracking-[0.3em] uppercase text-black mb-16">Valores Fundamentales</h3>
               
               <div className="space-y-20 mb-32">
                 {[
@@ -106,7 +106,7 @@ export default function About() {
                       </div>
                       <div>
                         <h4 className="text-xl font-medium tracking-tight mb-3 group-hover:translate-x-1 transition-transform duration-500">{item.title}</h4>
-                        <p className="text-base font-light opacity-50 leading-relaxed max-w-sm group-hover:opacity-80 transition-opacity duration-500">
+                        <p className="text-base font-light text-black leading-relaxed max-w-sm transition-opacity duration-500">
                           {item.desc}
                         </p>
                       </div>
@@ -124,11 +124,11 @@ export default function About() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="mb-16"
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 opacity-50">Nuestra Visión</h3>
-                  <p className="text-lg font-medium leading-relaxed opacity-70 mb-6">
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-black">Nuestra Visión</h3>
+                  <p className="text-lg font-medium leading-relaxed text-black mb-6">
                     "Ser la empresa líder y referente en administración condominal, reconocida no solo por nuestra eficiencia operativa, sino por transformar condominios en comunidades seguras y llenas de plusvalía. Aspiramos a redefinir el estándar de la industria, demostrando que la excelencia técnica y la calidez humana pueden y deben ir de la mano."
                   </p>
-                  <p className="text-base font-light opacity-50">
+                  <p className="text-base font-light text-black">
                     Redefinimos el estándar de la industria, fusionando excelencia técnica con un servicio humano excepcional.
                   </p>
                 </motion.div>
@@ -139,7 +139,7 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 opacity-50">Misión</h3>
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-black">Misión</h3>
                   <p className="text-xl font-medium tracking-tighter leading-tight">
                     Establecer una Administración con un propósito de liderazgo disruptivo, no solo mejorar las condiciones existentes sino agregar plusvalía al patrimonio mediante la gestión administrativa preventiva.
                   </p>

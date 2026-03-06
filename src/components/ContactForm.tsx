@@ -24,7 +24,7 @@ export default function ContactForm() {
           onSubmit={(e) => e.preventDefault()}
         >
           <div>
-            <label htmlFor="name" className="block text-[10px] font-medium tracking-[0.2em] uppercase opacity-60 mb-3">Nombre</label>
+            <label htmlFor="name" className="block text-[10px] font-medium tracking-[0.2em] uppercase text-black mb-3">Nombre</label>
             <input 
               type="text" 
               id="name" 
@@ -34,7 +34,7 @@ export default function ContactForm() {
             />
           </div>
           <div>
-            <label htmlFor="details" className="block text-[10px] font-medium tracking-[0.2em] uppercase opacity-60 mb-3">Detalle de la consulta</label>
+            <label htmlFor="details" className="block text-[10px] font-medium tracking-[0.2em] uppercase text-black mb-3">Detalle de la consulta</label>
             <textarea 
               id="details" 
               rows={4}

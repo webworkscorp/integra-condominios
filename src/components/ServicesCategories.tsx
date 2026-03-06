@@ -18,7 +18,7 @@ export default function ServicesCategories() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-4"
         >
-          <h2 className="text-sm font-medium tracking-[0.2em] uppercase mb-6 lg:sticky lg:top-32">
+          <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-black mb-6 lg:sticky lg:top-32">
             Nuestros Servicios
           </h2>
         </motion.div>
@@ -38,7 +38,7 @@ export default function ServicesCategories() {
                 </span>
                 <div className="flex-1">
                   <h3 className="text-3xl font-medium tracking-tight mb-4">{service.title}</h3>
-                  <p className="text-sm font-light leading-relaxed opacity-60 max-w-md">
+                  <p className="text-sm font-light leading-relaxed text-black max-w-md">
                     {service.desc}
                   </p>
                 </div>

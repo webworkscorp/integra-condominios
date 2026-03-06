@@ -12,6 +12,7 @@ import Statistics from './components/Statistics';
 import ServicesCategories from './components/ServicesCategories';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <ServicesCategories />
       <ContactForm />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

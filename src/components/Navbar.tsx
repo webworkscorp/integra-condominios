@@ -42,7 +42,7 @@ export default function Navbar() {
         )}
 
         <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center h-full">
-          <div className={`hidden md:flex gap-12 text-[10px] font-medium tracking-[0.15em] uppercase transition-colors duration-500 text-[var(--color-ink)]`}>
+          <div className={`hidden md:flex gap-12 text-[10px] font-medium tracking-[0.15em] uppercase transition-colors duration-500 text-black`}>
             {navLinks.map((item, i) => (
               <motion.a 
                 key={item}
