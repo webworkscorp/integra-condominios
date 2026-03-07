@@ -27,22 +27,22 @@ export default function Navbar() {
         initial={{ y: "-100%" }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className={`sticky top-0 left-0 w-full z-50 transition-all duration-500 overflow-hidden ${scrolled ? 'py-2 bg-white/90 backdrop-blur-md border-b border-[var(--color-line)]' : 'h-20 bg-white'}`}
+        className={`sticky top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-3 bg-[var(--color-ink)]/95 backdrop-blur-md border-b border-white/10' : 'h-28 md:h-36 bg-[var(--color-ink)]'}`}
       >
         {/* Centered Image - Maximize size within the fixed header height */}
         {!scrolled && (
-          <div className="absolute inset-0 z-0 flex justify-center items-center py-1 px-4">
+          <div className="absolute inset-0 z-0 flex justify-center items-center pointer-events-none">
             <img 
-              src="https://i.imgur.com/wGhXR21.jpeg" 
+              src="https://i.imgur.com/APwgBKz.png" 
               alt="Header Background" 
-              className="h-full w-auto object-contain max-w-full"
+              className="h-36 md:h-56 w-auto object-contain drop-shadow-xl translate-y-2 md:translate-y-4"
               referrerPolicy="no-referrer"
             />
           </div>
         )}
 
         <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center h-full">
-          <div className={`hidden md:flex gap-12 text-[10px] font-medium tracking-[0.15em] uppercase transition-colors duration-500 text-black`}>
+          <div className={`hidden md:flex gap-12 text-[10px] font-medium tracking-[0.15em] uppercase transition-colors duration-500 text-white`}>
             {navLinks.map((item, i) => (
               <motion.a 
                 key={item}
@@ -59,11 +59,11 @@ export default function Navbar() {
 
           <button 
             onClick={() => setIsMenuOpen(true)}
-            className={`ml-12 flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-[var(--color-ink)]`}
+            className={`ml-12 flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-white`}
           >
-            <span className={`w-6 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)]`}></span>
-            <span className={`w-4 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)]`}></span>
-            <span className={`w-2 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)]`}></span>
+            <span className={`w-6 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
+            <span className={`w-4 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
+            <span className={`w-2 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
           </button>
         </div>
       </motion.nav>

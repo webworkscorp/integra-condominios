@@ -56,8 +56,8 @@ export default function Competencies() {
                   transition={{ type: "spring", stiffness: 150, damping: 15, delay: idx * 0.05 }}
                   className="group"
                 >
-                  <h4 className="text-xl font-medium mb-3 group-hover:translate-x-2 transition-transform duration-500">{skill.title}</h4>
-                  <p className="text-sm font-light opacity-60 leading-relaxed">{skill.desc}</p>
+                  <h4 className="text-xl font-medium mb-3 group-hover:translate-x-2 transition-transform duration-500 text-black">{skill.title}</h4>
+                  <p className="text-base font-normal text-black leading-relaxed">{skill.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -85,8 +85,8 @@ export default function Competencies() {
                   transition={{ type: "spring", stiffness: 150, damping: 15, delay: idx * 0.05 }}
                   className="group"
                 >
-                  <h4 className="text-xl font-medium mb-3 group-hover:translate-x-2 transition-transform duration-500">{skill.title}</h4>
-                  <p className="text-sm font-light opacity-60 leading-relaxed">{skill.desc}</p>
+                  <h4 className="text-xl font-medium mb-3 group-hover:translate-x-2 transition-transform duration-500 text-white">{skill.title}</h4>
+                  <p className="text-base font-normal text-white leading-relaxed">{skill.desc}</p>
                 </motion.div>
               ))}
             </div>

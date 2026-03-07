@@ -17,19 +17,8 @@ export default function About() {
               <span className="w-12 h-[1px] bg-[var(--color-ink)]"></span>
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Esencia</span>
             </div>
-            <p className="text-2xl md:text-4xl font-medium tracking-tight leading-tight mb-16">
-              {`"En Integra, Un tubo roto significa una familia que no podrá usar su cocina, entendemos la necesidad humana y actuamos de forma personalizada e inmediata, La falta de un Quick Pass no es solo un problema de acceso, es una persona insatisfecha que no puede llegar cómodamente a su hogar. Solucionamos su problema de acceso para servir a la persona, trabajamos con un sistema de tickets para mejorar la atención oportuna en un plazo máximo de 24 horas ."`.split(',').map((phrase, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, x: -30, scale: 0.9 }}
-                  whileInView={{ opacity: 1, x: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ type: "spring", stiffness: 200, damping: 15, delay: i * 0.05 }}
-                  className="inline-block mr-2 origin-bottom-left"
-                >
-                  {phrase}{i < 3 ? ',' : ''}
-                </motion.span>
-              ))}
+            <p className="text-2xl md:text-4xl font-medium tracking-tight leading-tight mb-16 whitespace-pre-wrap">
+              Somos una empresa dedicada a la administración de condominios, con una gran trayectoria que nos permite brindar el mejor servicio para tu condominio,. redefinimos el concepto de administración con un liderazgo disruptivo y enfoque humano.                                                         En INTEGRA CONDOMINIOS profesionalizamos tu comunidad con reportes en tiempo real y atención PERSONALIZADA.{"\n"}¡Eleva el estándar de tu hogar hoy!
             </p>
           </motion.div>
         </div>

@@ -13,9 +13,9 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <img 
-              src="https://i.imgur.com/wGhXR21.jpeg" 
+              src="https://i.imgur.com/APwgBKz.png" 
               alt="Integra Condominios Logo" 
-              className="h-20 md:h-28 object-contain mb-8 invert mix-blend-screen"
+              className="h-36 md:h-56 object-contain mb-8"
               referrerPolicy="no-referrer"
             />
             <p className="text-sm font-light opacity-60 max-w-sm leading-relaxed">
