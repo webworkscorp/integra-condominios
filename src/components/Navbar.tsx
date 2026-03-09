@@ -42,24 +42,9 @@ export default function Navbar() {
         )}
 
         <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center h-full">
-          <div className={`hidden md:flex gap-12 text-[10px] font-medium tracking-[0.15em] uppercase transition-colors duration-500 text-white`}>
-            {navLinks.map((item, i) => (
-              <motion.a 
-                key={item}
-                href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + (i * 0.1), ease: [0.22, 1, 0.36, 1] }}
-                className="hover:opacity-50 transition-opacity"
-              >
-                {item}
-              </motion.a>
-            ))}
-          </div>
-
           <button 
             onClick={() => setIsMenuOpen(true)}
-            className={`ml-12 flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-white`}
+            className={`flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-white`}
           >
             <span className={`w-6 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
             <span className={`w-4 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
