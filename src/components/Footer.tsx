@@ -14,7 +14,7 @@ export default function Footer() {
           >
             <img 
               src="https://i.imgur.com/APwgBKz.png" 
-              alt="Integra Condominios Logo" 
+              alt="Integra condominios CR Logo" 
               className="h-36 md:h-56 object-contain mb-8"
               referrerPolicy="no-referrer"
             />
@@ -74,7 +74,7 @@ export default function Footer() {
           transition={{ type: "spring", stiffness: 150, damping: 20, delay: 0.3 }}
           className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-[0.2em] uppercase opacity-40"
         >
-          <p>© {new Date().getFullYear()} INTEGRA CONDOMINIOS. TODOS LOS DERECHOS RESERVADOS.</p>
+          <p>© {new Date().getFullYear()} INTEGRA CONDOMINIOS CR. TODOS LOS DERECHOS RESERVADOS.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacidad</a>
             <a href="#" className="hover:text-white transition-colors">Términos</a>

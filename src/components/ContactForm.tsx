@@ -10,7 +10,7 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const message = `Hola Integra Condominios, me gustaría solicitar información:
+    const message = `Hola Integra condominios CR, me gustaría solicitar información:
 *Nombre:* ${formData.name}
 *Consulta:* ${formData.details}`;
 
