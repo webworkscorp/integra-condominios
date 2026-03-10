@@ -18,7 +18,7 @@ export default function About() {
               <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Esencia</span>
             </div>
             <p className="text-2xl md:text-4xl font-medium tracking-tight leading-tight mb-16 whitespace-pre-wrap">
-              Somos una empresa dedicada a la administración de condominios, con una gran trayectoria que nos permite brindar el mejor servicio para tu condominio; redefinimos el concepto de administración con un liderazgo disruptivo y enfoque humano. En INTEGRA CONDOMINIOS profesionalizamos tu comunidad con reportes en tiempo real y atención PERSONALIZADA.{"\n"}¡Eleva el estándar de tu hogar hoy!
+              Somos una empresa dedicada a la administración de condominios, con una gran trayectoria que nos permite brindar el mejor servicio para tu condominio; redefinimos el concepto de administración con un liderazgo disruptivo y enfoque humano. En Integra Condominios CR profesionalizamos tu comunidad con reportes en tiempo real y atención PERSONALIZADA.{"\n"}¡Eleva el estándar de tu hogar hoy!
             </p>
           </motion.div>
         </div>

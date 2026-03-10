@@ -14,7 +14,7 @@ export default function Footer() {
           >
             <img 
               src="https://i.imgur.com/APwgBKz.png" 
-              alt="Integra condominios CR Logo" 
+              alt="Integra Condominios CR Logo" 
               className="h-36 md:h-56 object-contain mb-8"
               referrerPolicy="no-referrer"
             />

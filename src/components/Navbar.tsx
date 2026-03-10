@@ -34,7 +34,7 @@ export default function Navbar() {
           <div className="absolute inset-0 z-0 flex justify-center items-center pointer-events-none">
             <img 
               src="https://i.imgur.com/APwgBKz.png" 
-              alt="Header Background" 
+              alt="Integra Condominios CR Logo" 
               className="h-36 md:h-56 w-auto object-contain drop-shadow-xl translate-y-2 md:translate-y-4"
               referrerPolicy="no-referrer"
             />
