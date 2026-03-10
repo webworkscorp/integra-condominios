@@ -5,18 +5,18 @@ export default function Hero() {
     <section className="relative min-h-[calc(100vh-110px)] flex flex-col justify-center px-6 md:px-12 py-20">
       {/* Full-screen Background Video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <motion.video 
-          initial={{ scale: 1.1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        <video 
           autoPlay 
           muted 
           loop 
           playsInline
-          className="w-full h-full object-cover"
+          preload="auto"
+          poster="https://i.imgur.com/APwgBKz.png"
+          className="w-full h-full object-cover opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]"
+          onCanPlay={(e) => (e.currentTarget.style.opacity = '1')}
         >
           <source src="https://ohtpkxdwfincfaglhvsa.supabase.co/storage/v1/object/sign/Videos%20Kevin%20si/13898169_1080_1920_25fps.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xZDIzNDkyNC00N2EyLTQ4Y2MtODc0Ny0xMDZkZmM5ODQyYjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJWaWRlb3MgS2V2aW4gc2kvMTM4OTgxNjlfMTA4MF8xOTIwXzI1ZnBzLm1wNCIsImlhdCI6MTc3Mjc2NDEwOSwiZXhwIjoxODA0MzAwMTA5fQ.3GOc8EWsBS9P6mpTWdm0yOg2geeDnq3oZcTcsgmPaBY" type="video/mp4" />
-        </motion.video>
+        </video>
         {/* Gradient overlay: refined for video background to maintain high quality while ensuring text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg)]/90 via-[var(--color-bg)]/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg)] via-transparent to-transparent opacity-60" />
