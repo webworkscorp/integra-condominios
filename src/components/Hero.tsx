@@ -10,10 +10,7 @@ export default function Hero() {
           muted 
           loop 
           playsInline
-          preload="auto"
-          poster="https://i.imgur.com/APwgBKz.png"
-          className="w-full h-full object-cover opacity-0 animate-[fadeIn_1s_ease-in-out_forwards]"
-          onCanPlay={(e) => (e.currentTarget.style.opacity = '1')}
+          className="w-full h-full object-cover"
         >
           <source src="https://ohtpkxdwfincfaglhvsa.supabase.co/storage/v1/object/sign/Videos%20Kevin%20si/13898169_1080_1920_25fps.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xZDIzNDkyNC00N2EyLTQ4Y2MtODc0Ny0xMDZkZmM5ODQyYjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJWaWRlb3MgS2V2aW4gc2kvMTM4OTgxNjlfMTA4MF8xOTIwXzI1ZnBzLm1wNCIsImlhdCI6MTc3Mjc2NDEwOSwiZXhwIjoxODA0MzAwMTA5fQ.3GOc8EWsBS9P6mpTWdm0yOg2geeDnq3oZcTcsgmPaBY" type="video/mp4" />
         </video>

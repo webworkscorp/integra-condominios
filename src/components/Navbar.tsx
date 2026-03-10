@@ -29,21 +29,22 @@ export default function Navbar() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className={`sticky top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-3 bg-[var(--color-ink)]/95 backdrop-blur-md border-b border-white/10' : 'h-28 md:h-36 bg-[var(--color-ink)]'}`}
       >
-        {/* Centered Image - Maximize size within the fixed header height */}
-        {!scrolled && (
-          <div className="absolute inset-0 z-0 flex justify-center items-center pointer-events-none">
+
+
+        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-between items-center gap-12 h-full">
+          {/* Logo on the left */}
+          <a href="#" className="flex items-center">
             <img 
               src="https://i.imgur.com/APwgBKz.png" 
               alt="Integra Condominios CR Logo" 
-              className="h-36 md:h-56 w-auto object-contain drop-shadow-xl translate-y-2 md:translate-y-4"
+              className={`transition-all duration-500 ${scrolled ? 'h-10' : 'h-16 md:h-20'}`}
               referrerPolicy="no-referrer"
             />
-          </div>
-        )}
+          </a>
 
-        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center gap-12 h-full">
-          {/* Desktop Nav Links */}
-          <div className="hidden md:flex gap-8">
+          <div className="flex items-center gap-12">
+            {/* Desktop Nav Links */}
+            <div className="hidden md:flex gap-8">
             {navLinks.map((item) => (
               <a 
                 key={item}
@@ -63,6 +64,7 @@ export default function Navbar() {
             <span className={`w-4 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
             <span className={`w-2 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
           </button>
+          </div>
         </div>
       </motion.nav>
 
