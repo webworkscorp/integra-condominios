@@ -113,11 +113,11 @@ export default function About() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="mb-16"
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-black">Nuestra Visión</h3>
-                  <p className="text-lg font-medium leading-relaxed text-black mb-6">
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-ink)]">Nuestra Visión</h3>
+                  <p className="text-lg font-medium leading-relaxed text-[var(--color-ink)] mb-6">
                     "Ser la empresa líder y referente en administración condominal, reconocida no solo por nuestra eficiencia operativa, sino por transformar condominios en comunidades seguras y llenas de plusvalía. Aspiramos a redefinir el estándar de la industria, demostrando que la excelencia técnica y la calidez humana pueden y deben ir de la mano."
                   </p>
-                  <p className="text-base font-light text-black">
+                  <p className="text-base font-light text-[var(--color-ink)]">
                     Redefinimos el estándar de la industria, fusionando excelencia técnica con un servicio humano excepcional.
                   </p>
                 </motion.div>
@@ -128,8 +128,8 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-black">Misión</h3>
-                  <p className="text-xl font-medium tracking-tighter leading-tight">
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-ink)]">Misión</h3>
+                  <p className="text-xl font-medium tracking-tighter leading-tight text-[var(--color-ink)]">
                     Establecer una Administración con un propósito de liderazgo disruptivo, no solo mejorar las condiciones existentes sino agregar plusvalía al patrimonio mediante la gestión administrativa preventiva.
                   </p>
                 </motion.div>

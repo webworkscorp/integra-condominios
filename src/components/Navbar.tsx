@@ -41,7 +41,20 @@ export default function Navbar() {
           </div>
         )}
 
-        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center h-full">
+        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center gap-12 h-full">
+          {/* Desktop Nav Links */}
+          <div className="hidden md:flex gap-8">
+            {navLinks.map((item) => (
+              <a 
+                key={item}
+                href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
+                className="text-[10px] font-medium tracking-[0.2em] uppercase text-white hover:opacity-50 transition-opacity"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+
           <button 
             onClick={() => setIsMenuOpen(true)}
             className={`flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-white`}

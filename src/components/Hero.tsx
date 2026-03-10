@@ -45,7 +45,7 @@ export default function Hero() {
             transition={{ type: "spring", stiffness: 150, damping: 20, delay: 0.4 }}
             className="mt-16 max-w-md ml-2"
           >
-            <p className="text-base font-light leading-relaxed text-black">
+            <p className="text-xl md:text-2xl font-medium leading-tight text-black">
               Trascendemos la administración tradicional. Diseñamos experiencias residenciales impecables mediante rigor financiero, tecnología y un servicio de guante blanco.
             </p>
             <div className="mt-10 flex items-center gap-6">
@@ -66,7 +66,7 @@ export default function Hero() {
           transition={{ type: "spring", stiffness: 150, damping: 15, delay: 0.6 }}
           className="hidden lg:flex bg-[var(--color-ink)] text-[var(--color-bg)] p-8 rounded-full w-40 h-40 flex flex-col items-center justify-center text-center mb-12 mr-12 shadow-2xl"
         >
-          <span className="text-4xl font-bold">12</span>
+          <span className="text-4xl font-bold">6</span>
           <span className="text-[9px] tracking-[0.2em] uppercase mt-1">Años de<br/>Excelencia</span>
         </motion.div>
       </div>

@@ -17,7 +17,7 @@ export default function VideoLoop() {
           muted
           playsInline
         >
-          <source src="https://ohtpkxdwfincfaglhvsa.supabase.co/storage/v1/object/sign/Videos%20Kevin%20si/442100f5-4b65-4475-b396-3ebb21b129df.mov?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xZDIzNDkyNC00N2EyLTQ4Y2MtODc0Ny0xMDZkZmM5ODQyYjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJWaWRlb3MgS2V2aW4gc2kvNDQyMTAwZjUtNGI2NS00NDc1LWIzOTYtM2ViYjIxYjEyOWRmLm1vdiIsImlhdCI6MTc3MzEwMzAwNSwiZXhwIjoxODA0NjM5MDA1fQ.WF3AKJXsty0uG7vVjvT3gXq1S1GEl3XiUGajLdxkVP0" type="video/mp4" />
+          <source src="https://ohtpkxdwfincfaglhvsa.supabase.co/storage/v1/object/sign/Videos%20Kevin%20si/442100f5-4b65-4475-b396-3ebb21b129df.mov?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8xZDIzNDkyNC00N2EyLTQ4Y2MtODc0Ny0xMDZkZmM5ODQyYjMiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJWaWRlb3MgS2V2aW4gc2kvNDQyMTAwZjUtNGI2NS00NDc1LWIzOTYtM2ViYjIxYjEyOWRmLm1vdiIsImlhdCI6MTc3MzEwMzAwNSwiZXhwIjoxODA0NjM5MDA1fQ.WF3AKJXsty0uG7vVjvT3gXq1S1GEl3XiUGajLdxkVP0" />
           Tu navegador no soporta el elemento de video.
         </video>
       </motion.div>
