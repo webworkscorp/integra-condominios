@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Approach from './components/Approach';
+import VideoLoop from './components/VideoLoop';
 import Competencies from './components/Competencies';
 import Statistics from './components/Statistics';
 import ServicesCategories from './components/ServicesCategories';
@@ -21,6 +22,7 @@ export default function App() {
       <Hero />
       <About />
       <Approach />
+      <VideoLoop />
       <Competencies />
       <Statistics />
       <ServicesCategories />

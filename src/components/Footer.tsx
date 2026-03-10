@@ -31,7 +31,16 @@ export default function Footer() {
           >
             <h4 className="text-[10px] font-medium tracking-[0.2em] uppercase opacity-40 mb-6">Oficinas</h4>
             <ul className="space-y-4 text-sm font-light opacity-80">
-              {/* Dejado en blanco a petición del usuario */}
+              <li>
+                <a href="tel:+50686018862" className="hover:text-white transition-colors">
+                  Tel: +506 8601-8862
+                </a>
+              </li>
+              <li>
+                <a href="mailto:integracondominiosgen@gmail.com" className="hover:text-white transition-colors">
+                  integracondominiosgen@gmail.com
+                </a>
+              </li>
             </ul>
           </motion.div>
 
