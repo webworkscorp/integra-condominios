@@ -89,10 +89,14 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0, rotate: 180 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ type: "spring", stiffness: 150, damping: 15, delay: 0.6 }}
-          className="hidden lg:flex bg-[var(--color-ink)] text-[var(--color-bg)] p-8 rounded-full w-40 h-40 flex flex-col items-center justify-center text-center mb-12 mr-12 shadow-2xl"
+          className="hidden lg:flex w-48 h-48 items-center justify-center mb-12 mr-12 drop-shadow-2xl"
         >
-          <span className="text-4xl font-bold">6</span>
-          <span className="text-[9px] tracking-[0.2em] uppercase mt-1">Años de<br/>Excelencia</span>
+          <img 
+            src="https://i.imgur.com/GGLS9cz.png" 
+            alt="Excelencia" 
+            className="w-full h-full object-contain"
+            referrerPolicy="no-referrer"
+          />
         </motion.div>
       </div>
     </section>
