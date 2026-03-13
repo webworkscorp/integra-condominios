@@ -89,7 +89,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0, rotate: 180 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ type: "spring", stiffness: 150, damping: 15, delay: 0.6 }}
-          className="hidden lg:flex w-48 h-48 items-center justify-center mb-12 mr-12 drop-shadow-2xl"
+          className="hidden lg:flex w-64 h-64 items-center justify-center mb-12 mr-12 drop-shadow-2xl"
         >
           <img 
             src="https://i.imgur.com/GGLS9cz.png" 
