@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-sm">
               <img 
-                src="https://i.imgur.com/lkvm3Q0.png" 
+                src="https://i.imgur.com/UEIoFKQ.png" 
                 alt="Integra Condominios" 
                 className="w-full h-auto object-contain drop-shadow-2xl"
                 referrerPolicy="no-referrer"
