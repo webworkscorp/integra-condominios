@@ -6,24 +6,47 @@ export default function VideoLoop() {
 
   useEffect(() => {
     const video = videoRef.current;
+    let isMounted = true;
+
     if (video) {
       console.log('Video Loop intentando cargar:', video.currentSrc);
       video.muted = true;
-      video.play().then(() => {
-        console.log('Video Loop reproduciéndose correctamente');
-      }).catch((err) => {
-        console.warn('Autoplay bloqueado en Video Loop, esperando interacción:', err);
-        const handleInteraction = () => {
-          video.play().then(() => console.log('Video Loop iniciado tras interacción'));
-          document.removeEventListener('click', handleInteraction);
-        };
-        document.addEventListener('click', handleInteraction, { once: true });
-      });
+      
+      const playVideo = async () => {
+        try {
+          await video.play();
+          if (isMounted) {
+            console.log('Video Loop reproduciéndose correctamente');
+          }
+        } catch (err) {
+          if (err instanceof Error && err.name === 'AbortError') {
+            console.log('Video play was aborted (expected on unmount)');
+            return;
+          }
+          console.warn('Autoplay bloqueado en Video Loop, esperando interacción:', err);
+          const handleInteraction = () => {
+            if (video) {
+              video.play().then(() => console.log('Video Loop iniciado tras interacción')).catch(() => {});
+            }
+            document.removeEventListener('click', handleInteraction);
+          };
+          document.addEventListener('click', handleInteraction, { once: true });
+        }
+      };
+
+      playVideo();
 
       video.addEventListener('error', () => {
         console.error('Error cargando video en Video Loop:', video.error);
       });
     }
+
+    return () => {
+      isMounted = false;
+      if (video) {
+        video.pause();
+      }
+    };
   }, []);
 
   return (

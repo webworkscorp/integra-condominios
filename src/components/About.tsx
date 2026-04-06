@@ -14,11 +14,11 @@ export default function About() {
             className="max-w-5xl"
           >
             <div className="flex items-center gap-4 mb-8">
-              <span className="w-12 h-[1px] bg-[var(--color-ink)]"></span>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Esencia</span>
+              <span className="w-12 h-[2px] bg-[var(--color-accent)]"></span>
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-ink)]">Nuestra Esencia</span>
             </div>
             <p className="text-2xl md:text-4xl font-medium tracking-tight leading-tight mb-16 whitespace-pre-wrap">
-              Somos una empresa dedicada a la administración de condominios, con una gran trayectoria que nos permite brindar el mejor servicio para tu condominio; redefinimos el concepto de administración con un liderazgo disruptivo y enfoque humano. En Integra Condominios CR profesionalizamos tu comunidad con reportes en tiempo real y atención PERSONALIZADA.{"\n"}¡Eleva el estándar de tu hogar hoy!
+              Somos una empresa dedicada a la administración de condominios, con una gran trayectoria que nos permite brindar el mejor servicio para tu condominio; redefinimos el concepto de administración con un liderazgo disruptivo y enfoque humano. En Integra Condominios CR profesionalizamos tu comunidad con reportes en tiempo real y atención <span className="text-[var(--color-accent)]">PERSONALIZADA</span>.{"\n"}¡Eleva el estándar de tu hogar hoy!
             </p>
           </motion.div>
         </div>
@@ -31,7 +31,7 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1, borderRadius: "3rem" }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="aspect-[4/5] overflow-hidden bg-zinc-100 hidden lg:block"
+              className="aspect-[4/5] overflow-hidden bg-zinc-100 hidden lg:block border-l-8 border-[var(--color-accent)]"
             >
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
@@ -49,16 +49,16 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="relative pl-8 border-l border-[var(--color-line)]"
+              className="relative pl-8 border-l-2 border-[var(--color-accent)]"
             >
-              <h3 className="text-[10px] font-bold tracking-[0.3em] uppercase text-black mb-16">Valores Fundamentales</h3>
+              <h3 className="text-[10px] font-bold tracking-[0.3em] uppercase text-[var(--color-ink)] mb-16">Valores Fundamentales</h3>
               
               <div className="space-y-20 mb-32">
                 {[
                   {
                     title: "Transparencia Radical",
                     desc: "Cuentas claras, amistades largas. La honestidad es nuestra base innegociable.",
-                    icon: "https://i.imgur.com/hqQwTgC.png"
+                    icon: "https://i.imgur.com/rMnvWhP.png"
                   },
                   {
                     title: "Empatía Activa",
@@ -80,12 +80,12 @@ export default function About() {
                     className="group relative"
                   >
                     {/* Indicator Dot on the Rail */}
-                    <div className="absolute -left-[37px] top-1 w-4 h-4 bg-[var(--color-bg)] border border-[var(--color-line)] rounded-full flex items-center justify-center z-10 group-hover:border-[var(--color-ink)] transition-colors duration-500">
-                      <div className="w-1 h-1 bg-[var(--color-ink)] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="absolute -left-[37px] top-1 w-4 h-4 bg-white border-2 border-[var(--color-accent)] rounded-full flex items-center justify-center z-10 group-hover:bg-[var(--color-accent)] transition-colors duration-500">
+                      <div className="w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
 
                     <div className="flex items-start gap-8">
-                      <div className="w-10 h-10 shrink-0 opacity-60 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
+                      <div className="w-12 h-12 shrink-0 p-2 bg-white rounded-xl shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all duration-500 border border-[var(--color-line)] group-hover:border-[var(--color-accent)]">
                         <img 
                           src={item.icon} 
                           alt={item.title} 
@@ -94,8 +94,8 @@ export default function About() {
                         />
                       </div>
                       <div>
-                        <h4 className="text-xl font-medium tracking-tight mb-3 group-hover:translate-x-1 transition-transform duration-500">{item.title}</h4>
-                        <p className="text-base font-light text-black leading-relaxed max-w-sm transition-opacity duration-500">
+                        <h4 className="text-xl font-bold tracking-tight mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-500">{item.title}</h4>
+                        <p className="text-base font-light text-[var(--color-ink)] leading-relaxed max-w-sm transition-opacity duration-500">
                           {item.desc}
                         </p>
                       </div>
@@ -105,7 +105,7 @@ export default function About() {
               </div>
 
               {/* Moved Section: Vision & Mission */}
-              <div className="pt-16 border-t border-[var(--color-line)]">
+              <div className="pt-16 border-t-2 border-[var(--color-accent)]">
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -113,12 +113,9 @@ export default function About() {
                   transition={{ duration: 0.8, delay: 0.4 }}
                   className="mb-16"
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-ink)]">Nuestra Visión</h3>
-                  <p className="text-lg font-medium leading-relaxed text-[var(--color-ink)] mb-6">
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-accent)]">Nuestra Visión</h3>
+                  <p className="text-lg font-medium leading-relaxed text-[var(--color-ink)] mb-6 border-l-4 border-[var(--color-accent)] pl-6">
                     "Ser la empresa líder y referente en administración condominal, reconocida no solo por nuestra eficiencia operativa, sino por transformar condominios en comunidades seguras y llenas de plusvalía. Aspiramos a redefinir el estándar de la industria, demostrando que la excelencia técnica y la calidez humana pueden y deben ir de la mano."
-                  </p>
-                  <p className="text-base font-light text-[var(--color-ink)]">
-                    Redefinimos el estándar de la industria, fusionando excelencia técnica con un servicio humano excepcional.
                   </p>
                 </motion.div>
 
@@ -128,9 +125,9 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.6 }}
                 >
-                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-ink)]">Misión</h3>
-                  <p className="text-xl font-medium tracking-tighter leading-tight text-[var(--color-ink)]">
-                    Establecer una Administración con un propósito de liderazgo disruptivo, no solo mejorar las condiciones existentes sino agregar plusvalía al patrimonio mediante la gestión administrativa preventiva.
+                  <h3 className="text-sm font-bold tracking-[0.1em] uppercase mb-4 text-[var(--color-accent)]">Misión</h3>
+                  <p className="text-xl font-bold tracking-tighter leading-tight text-[var(--color-ink)]">
+                    Establecer una Administración con un propósito de liderazgo disruptivo, no solo mejorar las condiciones existentes sino agregar <span className="text-[var(--color-accent)]">plusvalía</span> al patrimonio mediante la gestión administrativa preventiva.
                   </p>
                 </motion.div>
               </div>

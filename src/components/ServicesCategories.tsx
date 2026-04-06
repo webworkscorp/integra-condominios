@@ -18,12 +18,12 @@ export default function ServicesCategories() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-4"
         >
-          <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-black mb-6 lg:sticky lg:top-32">
+          <h2 className="text-sm font-bold tracking-[0.2em] uppercase text-[var(--color-ink)] mb-6 lg:sticky lg:top-32 border-l-4 border-[var(--color-accent)] pl-6">
             Nuestros Servicios
           </h2>
         </motion.div>
         <div className="lg:col-span-8">
-          <div className="border-t border-[var(--color-line)]">
+          <div className="border-t-2 border-[var(--color-accent)]">
             {services.map((service, index) => (
               <motion.div 
                 key={index}
@@ -31,20 +31,20 @@ export default function ServicesCategories() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
-                className="group border-b border-[var(--color-line)] py-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center cursor-pointer hover:px-8 transition-all duration-500"
+                className="group border-b border-[var(--color-line)] py-12 flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-center cursor-pointer hover:bg-[var(--color-soft-blue)] hover:px-8 transition-all duration-500"
               >
-                <span className="text-4xl font-medium group-hover:text-[var(--color-ink)] transition-colors duration-500">
+                <span className="text-4xl font-bold text-[var(--color-accent)] group-hover:scale-110 transition-transform duration-500">
                   {service.num}
                 </span>
                 <div className="flex-1">
-                  <h3 className="text-3xl font-medium tracking-tight mb-4">{service.title}</h3>
-                  <p className="text-sm font-light leading-relaxed text-black max-w-md">
+                  <h3 className="text-3xl font-bold tracking-tight mb-4 group-hover:text-[var(--color-ink)] transition-colors duration-500">{service.title}</h3>
+                  <p className="text-sm font-light leading-relaxed text-[var(--color-ink)] max-w-md">
                     {service.desc}
                   </p>
                 </div>
-                <div className="w-12 h-12 rounded-full border border-[var(--color-line)] flex items-center justify-center group-hover:bg-[var(--color-ink)] group-hover:text-[var(--color-bg)] transition-all duration-500 shrink-0">
+                <div className="w-12 h-12 rounded-full border-2 border-[var(--color-accent)] flex items-center justify-center group-hover:bg-[var(--color-accent)] group-hover:text-white transition-all duration-500 shrink-0">
                   <svg className="w-4 h-4 -rotate-45 group-hover:rotate-0 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>
               </motion.div>

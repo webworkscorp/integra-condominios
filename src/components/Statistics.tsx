@@ -17,14 +17,14 @@ export default function Statistics() {
         >
           {[...Array(6)].map((_, i) => (
             <div key={i} className="flex gap-16 items-center">
-              <span className="text-2xl md:text-4xl font-medium tracking-tighter uppercase">EXCELENCIA</span>
-              <span className="w-2 h-2 rounded-full bg-[var(--color-ink)]" />
-              <span className="text-2xl md:text-4xl font-medium tracking-tighter uppercase">RIGOR</span>
-              <span className="w-2 h-2 rounded-full bg-[var(--color-ink)]" />
-              <span className="text-2xl md:text-4xl font-medium tracking-tighter uppercase">TRANSPARENCIA</span>
-              <span className="w-2 h-2 rounded-full bg-[var(--color-ink)]" />
-              <span className="text-2xl md:text-4xl font-medium tracking-tighter uppercase">PLUSVALÍA</span>
-              <span className="w-2 h-2 rounded-full bg-[var(--color-ink)]" />
+              <span className="text-2xl md:text-4xl font-bold tracking-tighter uppercase text-[var(--color-ink)]">EXCELENCIA</span>
+              <span className="w-3 h-3 rounded-full bg-[var(--color-accent)]" />
+              <span className="text-2xl md:text-4xl font-bold tracking-tighter uppercase text-[var(--color-ink)]">RIGOR</span>
+              <span className="w-3 h-3 rounded-full bg-[var(--color-accent)]" />
+              <span className="text-2xl md:text-4xl font-bold tracking-tighter uppercase text-[var(--color-ink)]">TRANSPARENCIA</span>
+              <span className="w-3 h-3 rounded-full bg-[var(--color-accent)]" />
+              <span className="text-2xl md:text-4xl font-bold tracking-tighter uppercase text-[var(--color-ink)]">PLUSVALÍA</span>
+              <span className="w-3 h-3 rounded-full bg-[var(--color-accent)]" />
             </div>
           ))}
         </motion.div>

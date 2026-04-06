@@ -42,8 +42,8 @@ export default function Approach() {
             </div>
 
             {/* Architectural Accent Lines */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-[var(--color-ink)] opacity-20" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b border-r border-[var(--color-ink)] opacity-20" />
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[var(--color-accent)] opacity-60" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-[var(--color-accent)] opacity-60" />
           </motion.div>
 
           {/* Content Side */}
@@ -60,8 +60,8 @@ export default function Approach() {
               transition={{ duration: 1, delay: 0.5 }}
               className="flex items-center gap-4 mb-8"
             >
-              <span className="w-12 h-[1px] bg-[var(--color-ink)]"></span>
-              <span className="text-xs font-medium tracking-[0.2em] uppercase text-black">Nuestra Propuesta</span>
+              <span className="w-12 h-[2px] bg-[var(--color-accent)]"></span>
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-ink)]">Nuestra Propuesta</span>
             </motion.div>
             
             <motion.h2 
@@ -69,9 +69,9 @@ export default function Approach() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="text-4xl md:text-6xl font-sans font-medium tracking-tighter mb-8 leading-tight perspective-1000"
+              className="text-4xl md:text-6xl font-sans font-bold tracking-tighter mb-8 leading-tight perspective-1000 text-[var(--color-ink)]"
             >
-              🏢 Tu condominio merece una <span className="font-medium">gestión</span> de alto nivel.
+              🏢 Tu condominio merece una <span className="text-[var(--color-accent)]">gestión</span> de alto nivel.
             </motion.h2>
             
             <motion.p 
@@ -79,7 +79,7 @@ export default function Approach() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.7 }}
-              className="text-xl font-light text-black mb-12 leading-relaxed"
+              className="text-xl font-light text-[var(--color-ink)] mb-12 leading-relaxed"
             >
               Sabemos que administrar una comunidad no es solo cobrar cuotas; es garantizar la plusvalía de tu patrimonio y la armonía entre vecinos. Llegamos para transformar la administración tradicional.
             </motion.p>
@@ -92,9 +92,9 @@ export default function Approach() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: idx * 0.1, ease: "easeOut" }}
-                  className="group flex gap-6 p-8 rounded-[2rem] border border-[var(--color-line)] bg-[#fcfcfc] hover:bg-white hover:shadow-xl hover:shadow-black/5 transition-all duration-500"
+                  className="group flex gap-6 p-8 rounded-[2rem] border-2 border-transparent bg-[var(--color-soft-blue)] hover:bg-white hover:border-[var(--color-accent)] hover:shadow-2xl hover:shadow-[var(--color-accent)]/10 transition-all duration-500"
                 >
-                  <div className="w-12 h-12 shrink-0 group-hover:scale-110 transition-transform duration-500">
+                  <div className="w-12 h-12 shrink-0 group-hover:scale-110 transition-transform duration-500 p-2 bg-white rounded-xl shadow-sm border border-[var(--color-line)] group-hover:border-[var(--color-accent)]">
                     <img 
                       src="https://i.imgur.com/n5mLfS7.png" 
                       alt="Check" 
@@ -103,8 +103,8 @@ export default function Approach() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-xl font-medium mb-2 tracking-tight">{pillar.title}</h4>
-                    <p className="text-sm font-light text-black leading-relaxed max-w-md transition-opacity duration-500">
+                    <h4 className="text-xl font-bold mb-2 tracking-tight group-hover:text-[var(--color-accent)] transition-colors duration-500">{pillar.title}</h4>
+                    <p className="text-sm font-light text-[var(--color-ink)] leading-relaxed max-w-md transition-opacity duration-500">
                       {pillar.desc}
                     </p>
                   </div>
@@ -119,8 +119,8 @@ export default function Approach() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-12 flex items-center gap-4"
             >
-              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <p className="text-xs font-medium tracking-[0.1em] uppercase text-black">
+              <div className="w-2 h-2 rounded-full bg-[var(--color-accent)] animate-pulse" />
+              <p className="text-xs font-bold tracking-[0.1em] uppercase text-[var(--color-ink)]">
                 📍 Estamos listos para elevar el estándar de tu residencial.
               </p>
             </motion.div>

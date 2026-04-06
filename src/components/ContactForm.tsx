@@ -34,8 +34,8 @@ export default function ContactForm() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-medium tracking-tighter uppercase mb-4">Contáctenos</h2>
-          <p className="text-base font-light opacity-80">Estamos aquí para resolver sus dudas y elevar el estándar de su propiedad.</p>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase mb-4 text-[var(--color-ink)]">Contáctenos</h2>
+          <p className="text-base font-light opacity-80 text-[var(--color-ink)]">Estamos aquí para resolver sus dudas y elevar el estándar de su propiedad.</p>
         </motion.div>
 
         <motion.form 
@@ -43,29 +43,29 @@ export default function ContactForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          className="space-y-8"
+          className="space-y-8 bg-white p-8 md:p-12 rounded-[3rem] border-2 border-[var(--color-accent)] shadow-2xl shadow-[var(--color-accent)]/5"
           onSubmit={handleSubmit}
         >
           <div>
-            <label htmlFor="name" className="block text-[10px] font-medium tracking-[0.2em] uppercase text-black mb-3">Nombre</label>
+            <label htmlFor="name" className="block text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3">Nombre</label>
             <input 
               type="text" 
               id="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full bg-transparent border-b border-[var(--color-line)] py-4 text-lg focus:outline-none focus:border-[var(--color-ink)] transition-colors"
+              className="w-full bg-transparent border-b-2 border-[var(--color-line)] py-4 text-lg focus:outline-none focus:border-[var(--color-accent)] transition-colors text-[var(--color-ink)]"
               placeholder="Su nombre completo"
               required
             />
           </div>
           <div>
-            <label htmlFor="details" className="block text-[10px] font-medium tracking-[0.2em] uppercase text-black mb-3">Detalle de la consulta</label>
+            <label htmlFor="details" className="block text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-3">Detalle de la consulta</label>
             <textarea 
               id="details" 
               rows={4}
               value={formData.details}
               onChange={handleChange}
-              className="w-full bg-transparent border-b border-[var(--color-line)] py-4 text-lg focus:outline-none focus:border-[var(--color-ink)] transition-colors resize-none"
+              className="w-full bg-transparent border-b-2 border-[var(--color-line)] py-4 text-lg focus:outline-none focus:border-[var(--color-accent)] transition-colors resize-none text-[var(--color-ink)]"
               placeholder="¿En qué podemos ayudarle?"
               required
             ></textarea>
@@ -73,7 +73,7 @@ export default function ContactForm() {
           <div className="pt-8 text-center">
             <button 
               type="submit"
-              className="px-12 py-5 bg-[var(--color-ink)] text-[var(--color-bg)] rounded-full text-xs font-medium tracking-[0.2em] uppercase hover:scale-95 transition-transform duration-500"
+              className="px-12 py-5 bg-[var(--color-accent)] text-white rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:scale-105 hover:shadow-xl hover:shadow-[var(--color-accent)]/20 transition-all duration-500"
             >
               Enviar Consulta
             </button>

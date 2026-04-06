@@ -27,43 +27,45 @@ export default function Navbar() {
         initial={{ y: "-100%" }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-        className={`sticky top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-3 bg-[var(--color-ink)]/95 backdrop-blur-md border-b border-white/10' : 'h-28 md:h-36 bg-[var(--color-ink)]'}`}
+        className={`sticky top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'py-3 bg-white/95 backdrop-blur-md border-b-[3px] border-[var(--color-accent)] shadow-lg' : 'h-28 md:h-36 bg-white'}`}
       >
 
 
-        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-between items-center gap-12 h-full">
-          {/* Logo on the left */}
-          <a href="#" className="flex items-center">
-            <img 
-              src="https://i.imgur.com/APwgBKz.png" 
-              alt="Integra Condominios CR Logo" 
-              className={`transition-all duration-500 ${scrolled ? 'h-10' : 'h-16 md:h-20'}`}
-              referrerPolicy="no-referrer"
-            />
-          </a>
-
-          <div className="flex items-center gap-12">
-            {/* Desktop Nav Links */}
-            <div className="hidden md:flex gap-8">
-            {navLinks.map((item) => (
-              <a 
-                key={item}
-                href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
-                className="text-[10px] font-medium tracking-[0.2em] uppercase text-white hover:opacity-50 transition-opacity"
-              >
-                {item}
-              </a>
-            ))}
+        <div className="relative z-10 max-w-[1800px] mx-auto px-6 md:px-12 flex justify-end items-center h-full">
+          {/* Logo in the absolute center of the container */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <a href="#" className="flex items-center">
+              <img 
+                src="https://i.imgur.com/Dm6GRkv.png" 
+                alt="Integra Condominios CR Logo" 
+                className={`transition-all duration-500 object-contain drop-shadow-sm ${scrolled ? 'h-20 md:h-24' : 'h-36 md:h-48'}`}
+                referrerPolicy="no-referrer"
+              />
+            </a>
           </div>
 
-          <button 
-            onClick={() => setIsMenuOpen(true)}
-            className={`flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-white`}
-          >
-            <span className={`w-6 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
-            <span className={`w-4 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
-            <span className={`w-2 h-[1.5px] transition-all duration-500 group-hover:w-6 bg-white`}></span>
-          </button>
+          {/* Right: Nav Links + Menu Button */}
+          <div className="flex items-center gap-12">
+            <div className="hidden md:flex gap-8 items-center">
+              {navLinks.map((item) => (
+                <a 
+                  key={item}
+                  href={`#${item.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
+                  className="text-[10px] font-bold tracking-[0.2em] uppercase text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors"
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+
+            <button 
+              onClick={() => setIsMenuOpen(true)}
+              className={`flex flex-col items-end justify-center gap-1.5 w-10 h-10 group cursor-pointer transition-colors duration-500 text-[var(--color-ink)]`}
+            >
+              <span className={`w-6 h-[2px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)] group-hover:bg-[var(--color-accent)]`}></span>
+              <span className={`w-4 h-[2px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)] group-hover:bg-[var(--color-accent)]`}></span>
+              <span className={`w-2 h-[2px] transition-all duration-500 group-hover:w-6 bg-[var(--color-ink)] group-hover:bg-[var(--color-accent)]`}></span>
+            </button>
           </div>
         </div>
       </motion.nav>
